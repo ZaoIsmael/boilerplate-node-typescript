@@ -1,0 +1,7 @@
+{
+  "*.{css,less,scss,html,json}": ["prettier --config .prettierrc  --write"],
+  "*.{ts}": ["
+        yarn run prettier-format
+        yarn run lint-and-fix
+  "],
+}

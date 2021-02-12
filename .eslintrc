@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/unicorn"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "prettier",
+    "unicorn"
+  ],
+  "root": true,
+  "rules": {
+    "unicorn/prevent-abbreviations": "off",
+    "newline-per-chained-call": 2,
+    "max-len": 2,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
